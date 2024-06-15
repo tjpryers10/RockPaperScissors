@@ -1,4 +1,4 @@
-// complete the logi of game inside this function
+// complete the logic of game inside this function
 
 const game = () => {
     let playerScore = 0;
@@ -87,12 +87,12 @@ const game = () => {
     }
 
     // function to run when game is over
-    const gameOver = (playerOptions,movesLeft) => {
+    const gameOver = (playerOptions, movesLeft) => {
         const chooseMove = document.querySelector('.move');
         const result = document.querySelector('.result');
-        const reloadBtn = document.querySelector('reload');
+        const reloadBtn = document.querySelector('.reload');
 
-        playerOptions.forEach(optione => {
+        playerOptions.forEach(option => {
             option.style.display = 'none'
         })
 
@@ -117,7 +117,7 @@ const game = () => {
         reloadBtn.innerText = 'Restart';
         reloadBtn.style.display = 'flex';
         reloadBtn.addEventListener('click', () => {
-            windows.location.reload();
+            window.location.reload();
         })
     }
 
